@@ -1,0 +1,38 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "shell",
+			"command": "catkin_make -DCMAKE_BUILD_TYPE=Debug",
+			"args": [],
+			"problemMatcher": [
+				"$catkin-gcc"
+			],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"label": "build"
+		},
+		{
+			"type": "shell",
+			"command":"catkin_make cleam",
+			"args": [
+			],
+			"problemMatcher": [
+				"$catkin-gcc"
+			],
+			"label": "clean"
+		},
+		{
+			"type": "shell",
+			"command":"catkin_make -DCMAKE_BUILD_TYPE=Release",
+			"args": [
+			],
+			"problemMatcher": [
+				"$catkin-gcc"
+			],
+			"label": "release"
+		}
+	]
+}
